@@ -1,0 +1,22 @@
+{
+    "name": "edujugon/adminlte",
+    "description": "Install latest version of AdminLTE Control Panel and some extra features in your Fresh Laravel 5 installation.",
+    "keywords": ["Laravel","AdminLTE","control panel","skeleton"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eduardo Marcos",
+            "email": "edujugon@gmail.com"
+        }
+    ],
+    "require": {
+        "almasaeed2010/adminlte": "~2.0",
+        "illuminate/support": "^5.2"
+    },
+    "autoload": {
+      "psr-4": {
+        "Edujugon\\AdminLTE\\": "src/"
+      }
+    },
+    "minimum-stability": "dev"
+}
