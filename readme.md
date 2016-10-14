@@ -16,8 +16,16 @@ type in console:
 composer require edujugon/adminlte
 ```
 
+## Laravel 5.*
 
-## Previous Steps
+Register AdminLTE service by adding it to the providers array.
+
+    'providers' => array(
+        ...
+        Edujugon\AdminLTE\Providers\PushNotificationServiceProvider::class
+    )
+
+## Recommended Steps
 
 Since this package integrates auth views you should set up the Laravel Authentication Feature first:
 

@@ -61,9 +61,9 @@ class PushNotificationServiceProvider extends ServiceProvider
         $languageController = 'LanguageController.php';
 
         $this->publishes([
-           $baseLang . $en =>  resource_path('lang'),
-           $baseLang . $es =>  resource_path('lang'),
-           $baseControllers . $languageController =>  app_path('Http/Controllers/'),
+           $baseLang . $en =>  resource_path('lang/en'),
+           $baseLang . $es =>  resource_path('lang/es'),
+           $baseControllers . $languageController =>  app_path('Http/Controllers'),
         ],'languages');
     }
 
