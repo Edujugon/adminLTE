@@ -70,7 +70,7 @@ class PushNotificationServiceProvider extends ServiceProvider
     public function publishCompanyDetails()
     {
 
-        $base = __DIR__ . '/../Config';
+        $base = __DIR__ . '/../Config/';
         $company = 'company.php';
 
         $this->publishes([
