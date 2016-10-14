@@ -1,6 +1,6 @@
 # Admin LTE Control Panel and Laravel 5
 
-Laravel 5 Package add latest version of AdminLTE Control Panel and some extra features in your Fresh Laravel 5 installation.
+This Package adds latest version of AdminLTE Control Panel and some extra features in your Fresh Laravel 5 installation.
 
 ## Extra Features
 
