@@ -1,6 +1,6 @@
 {
     "name": "edujugon/adminlte",
-    "description": "Install latest version of AdminLTE Control Panel and some extra features in your Fresh Laravel 5 installation.",
+    "description": "Install latest version of AdminLTE Control Panel and add some extra features in your Fresh Laravel 5 installation.",
     "keywords": ["Laravel","AdminLTE","control panel","skeleton"],
     "license": "MIT",
     "authors": [
