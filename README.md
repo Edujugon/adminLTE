@@ -22,7 +22,7 @@ Register AdminLTE service by adding it to the providers array.
 
     'providers' => array(
         ...
-        Edujugon\AdminLTE\Providers\PushNotificationServiceProvider::class
+        Edujugon\AdminLTE\Providers\AdminLTEServiceProvider::class
     )
 
 ## Recommended Steps
