@@ -56,7 +56,7 @@ php artisan vendor:publish --tag=adminLTE_views --force
 
 ## Publish Language Files and Controller.
 
-Publish the package's languages files to the application's own lang directory.
+Publish the package's language files to the application's own lang directory.
 
 Publish the package's LanguageController file to the application's own Controllers directory
 
