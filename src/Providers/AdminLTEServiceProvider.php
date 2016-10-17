@@ -4,7 +4,7 @@ namespace Edujugon\AdminLTE\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class PushNotificationServiceProvider extends ServiceProvider
+class AdminLTEServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
