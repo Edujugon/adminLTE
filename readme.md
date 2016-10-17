@@ -42,9 +42,8 @@ Then
 
 >Since you will typically need to overwrite the dependencies every time the package is updated, I recommend to use the --force flag.
 
-
 ```
-php artisan vendor:publish --provider="Edujugon\AdminLTE\Providers\AdminLTEServiceProvider" --tag="dependencies" --force
+php artisan vendor:publish --tag=adminLTE_dependencies --force
 ```
 
 ## Publish Views
@@ -52,7 +51,7 @@ php artisan vendor:publish --provider="Edujugon\AdminLTE\Providers\AdminLTEServi
 Publish the package's view files to the application's own view directory
 
 ```
-php artisan vendor:publish --provider="Edujugon\AdminLTE\Providers\AdminLTEServiceProvider" --tag="views"
+php artisan vendor:publish --tag=adminLTE_views --force
 ```
 
 ## Publish Language Files and Controller.
@@ -68,19 +67,35 @@ Publish the package's LanguageController file to the application's own Controlle
 *   More Languages coming soon
 
 ```
-php artisan vendor:publish --provider="Edujugon\AdminLTE\Providers\AdminLTEServiceProvider" --tag="languages"
+php artisan vendor:publish --tag=adminLTE_languages
+```
+
+The last step is to add the below line to project's routes file.
+
+#### Laravel 5.3
+
+File: routes/web.php
+
+#### Minor than 5.3
+
+File: app/routes.php
+
+```
+Route::get('language/{lang}', 'LanguageController@index');
 ```
 
 ## Publish Company parameters File.
 
-It will publish a file where you may have all company data in one place.
+It will publish a file where you may have all project company data in one place.
 
 File Location: config/company.php
 
 ```
-php artisan vendor:publish --provider="Edujugon\AdminLTE\Providers\AdminLTEServiceProvider" --tag="config"
+php artisan vendor:publish --tag=adminLTE_config
 ```
 
-##Contribution
 
-Contribution are always **welcome  and recommended!**
+
+## AdminLTE Control panel Preview and Documentation
+
+[https://almsaeedstudio.com/](https://almsaeedstudio.com/)

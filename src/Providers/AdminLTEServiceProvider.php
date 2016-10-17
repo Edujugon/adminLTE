@@ -37,20 +37,27 @@ class PushNotificationServiceProvider extends ServiceProvider
             $base.$bootstrap => public_path('adminLTE/'.$bootstrap),
             $base.$dist => public_path('adminLTE/'.$dist),
             $base.$plugins => public_path('adminLTE/'.$plugins),
-        ], 'dependencies');
+        ], 'adminLTE_dependencies');
 
 
     }
 
+    /**
+     *Publish AdminLTE Views
+     */
     public function publishViews()
     {
         $base = __DIR__.'/../views/';
 
         $this->publishes([
             $base => resource_path('views'),
-        ],'views');
+        ],'adminLTE_views');
     }
 
+    /**
+     *Publish AdminLTE Languages
+     * Language files and Controller
+     */
     public function publishLanguages()
     {
         $baseLang = __DIR__.'/../lang/';
@@ -64,9 +71,13 @@ class PushNotificationServiceProvider extends ServiceProvider
            $baseLang . $en =>  resource_path('lang/'.$en),
            $baseLang . $es =>  resource_path('lang/es'),
            $baseControllers . $languageController =>  app_path('Http/Controllers/'.$languageController),
-        ],'languages');
+        ],'adminLTE_languages');
     }
 
+    /**
+     *Publish AdminLTE Company file
+     * All company data in one place.
+     */
     public function publishCompanyDetails()
     {
 
@@ -75,7 +86,7 @@ class PushNotificationServiceProvider extends ServiceProvider
 
         $this->publishes([
            $base . $company => config_path($company)
-        ],'config');
+        ],'adminLTE_config');
     }
 
 
