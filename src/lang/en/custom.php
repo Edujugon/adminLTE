@@ -21,4 +21,7 @@ return [
     //Miscellaneous
     'name' => 'Name',
     'dashboard' => 'Dashboard',
+
+    //Sidebar
+    'main_navigation' => 'MAIN NAVIGATION'
 ];

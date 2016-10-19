@@ -21,4 +21,7 @@ return [
     //Miscellaneous
     'name' => 'Nombre',
     'dashboard' => 'Panel de control',
+
+    //Sidebar
+    'main_navigation' => 'MENU PRINCIPAL'
 ];
