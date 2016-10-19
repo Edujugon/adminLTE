@@ -1,6 +1,10 @@
 <?php
 
 return [
+    //Welcome Page
+    'login' => 'Login',
+    'register' => 'Register',
+
     //LogIn Page
     'sign_in' => 'Introduzca sus datos',
     'email' => 'Email',
