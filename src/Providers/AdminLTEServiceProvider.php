@@ -2,6 +2,7 @@
 
 namespace Edujugon\AdminLTE\Providers;
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\ServiceProvider;
 
 class AdminLTEServiceProvider extends ServiceProvider
@@ -97,6 +98,7 @@ class AdminLTEServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        //Registering laravel-language-detector
+        App::register('Vluzrmos\LanguageDetector\Providers\LanguageDetectorServiceProvider');
     }
 }
