@@ -23,7 +23,7 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu">
-        <li class="header">{{trans('custom.main_navigation}}</li>
+        <li class="header">{{trans('custom.main_navigation')}}</li>
         <li class="active treeview">
             <a href="#">
                 <i class="fa fa-dashboard"></i> <span>{{trans('custom.dashboard')}}</span>
